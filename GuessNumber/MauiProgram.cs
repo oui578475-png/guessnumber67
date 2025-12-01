@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace guessnumber67
+namespace GuessNumber
 {
     public static class MauiProgram
     {

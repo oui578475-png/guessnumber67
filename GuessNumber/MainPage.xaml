@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="guessnumber67.MainPage">
+             x:Class="GuessNumber.MainPage">
 
     <ScrollView>
         <VerticalStackLayout Padding="30,0" Spacing="20">
@@ -14,15 +14,16 @@
             <Label
                 Text="Välj svårighetsgrad"
                 FontSize="20" />
+            
 
             <Picker
                 x:Name="DifficultyPicker"
                 SelectedIndexChanged="DifficultyPicker_SelectedIndexChanged">
                 <Picker.Items>
-                    <x:String>0-10</x:String>
-                    <x:String>0-25</x:String>
-                    <x:String>0-50</x:String>
-                    <x:String>0-100</x:String>
+                    <x:String>1-10</x:String>
+                    <x:String>1-25</x:String>
+                    <x:String>1-50</x:String>
+                    <x:String>1-100</x:String>
                 </Picker.Items>
             </Picker>
 

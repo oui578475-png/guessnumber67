@@ -1,4 +1,6 @@
-﻿namespace guessnumber67
+﻿using System.Diagnostics;
+
+namespace GuessNumber
 {
     public partial class MainPage : ContentPage
     {
@@ -22,30 +24,32 @@
             if (DifficultyPicker.SelectedItem != null)
             {
                 string selected = DifficultyPicker.SelectedItem.ToString();
+                Debug.WriteLine($"Vald svårighetsgrad: {selected}");
+
                 switch (selected)
                 {
-                    case "0-10":
+                    case "1-10":
                         maxNumber = 10;
                         break;
-                    case "0-25":
+                    case "1-25":
                         maxNumber = 25;
                         break;
-                    case "0-50":
+                    case "1-50":
                         maxNumber = 50;
                         break;
-                    case "0-100":
+                    case "1-100":
                         maxNumber = 100;
                         break;
                 }
 
-                
-                // en liten kommentar
 
-                computerNumber = random.Next(0, maxNumber + 1);
+                 // kommentera 
+                computerNumber = random.Next(1, maxNumber);
+
                 attempts = 0;
 
                 FeedbackLabel.Text = "";
-                AttemptsLabel.Text = "Antal försök: 0";
+                AttemptsLabel.Text = $"Antal försök: {attempts}";
                 RedIndicator.IsVisible = false;
                 GreenIndicator.IsVisible = false;
 

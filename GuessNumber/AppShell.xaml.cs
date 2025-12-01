@@ -1,4 +1,4 @@
-﻿namespace guessnumber67
+﻿namespace GuessNumber
 {
     public partial class AppShell : Shell
     {

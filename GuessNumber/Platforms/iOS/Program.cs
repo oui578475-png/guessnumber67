@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace guessnumber67
+namespace GuessNumber
 {
     public class Program
     {

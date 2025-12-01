@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace guessnumber67
+namespace GuessNumber
 {
     public partial class App : Application
     {
