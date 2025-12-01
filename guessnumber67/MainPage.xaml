@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="guessnumber67.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="20">
+
+            <Label
+                Text="Gissa ett tal"
+                FontSize="36"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Välj svårighetsgrad"
+                FontSize="20" />
+
+            <Picker
+                x:Name="DifficultyPicker"
+                SelectedIndexChanged="DifficultyPicker_SelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>0-10</x:String>
+                    <x:String>0-25</x:String>
+                    <x:String>0-50</x:String>
+                    <x:String>0-100</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Entry
+                x:Name="GuessEntry"
+                Placeholder="Skriv ditt tal här"
+                Keyboard="Numeric"/>
+
+            <Button
+                x:Name="GuessButton"
+                Text="Gissa"
+                Clicked="GuessButton_Clicked"
+                IsEnabled="False"/>
+
+            <Label
+                x:Name="FeedbackLabel"
+                FontSize="20"
+                HorizontalOptions="Center"/>
+
+            <Label
+                x:Name="AttemptsLabel"
+                FontSize="18"
+                HorizontalOptions="Center"
+                Text="Antal försök: 0"/>
+
+            <BoxView
+                x:Name="RedIndicator"
+                Color="Red"
+                WidthRequest="30"
+                HeightRequest="30"
+                CornerRadius="15"
+                IsVisible="False"
+                HorizontalOptions="Center"/>
+
+            <BoxView
+                x:Name="GreenIndicator"
+                Color="Green"
+                WidthRequest="30"
+                HeightRequest="30"
+                CornerRadius="15"
+                IsVisible="False"
+                HorizontalOptions="Center"/>
+
+            
+            <Button
+                x:Name="PlayAgainButton"
+                Text="Spela igen"
+                Clicked="PlayAgainButton_Clicked"
+                IsEnabled="False"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
