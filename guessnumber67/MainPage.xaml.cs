@@ -38,6 +38,9 @@
                         break;
                 }
 
+                
+                // en liten kommentar
+
                 computerNumber = random.Next(0, maxNumber + 1);
                 attempts = 0;
 
